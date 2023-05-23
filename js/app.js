@@ -4,7 +4,7 @@ const ctx = canvas.getContext("2d");
 const gameContainer = document.getElementById('game-container');
 
 const flappyImg = new Image();
-flappyImg.src = 'assets/fp.png';
+flappyImg.src = 'assets/ec.png';
 
 const FLAP_SPEED = -5;
 const BIRD_WIDTH = 40;
@@ -138,7 +138,7 @@ function loop() {
 
     ctx.drawImage(flappyImg, birdX, birdY);
 
-    ctx.fillStyle = '#333';
+    ctx.fillStyle = '#0C41F8';
     ctx.fillRect(pipeX, -100, PIPE_WIDTH, pipeY);
     ctx.fillRect(pipeX, pipeY + PIPE_GAP, PIPE_WIDTH, canvas.height - pipeY);
 
